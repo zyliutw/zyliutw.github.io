@@ -75,10 +75,10 @@
           {%- if forloop.last and author_array_limit == author_array_size %}and&nbsp;{% endif -%}
         {% endif %}
         {%- if author_is_self -%}
-          <em>
+          <strong>
             {{- author.first }}
             {{ author.last -}}
-          </em>
+          </strong>
         {%- else -%}
           {%- if coauthor_url -%}
             <a href="{{coauthor_url}}">
@@ -139,14 +139,21 @@
     {% else %}
       {% capture entrytype %}{% endcapture %}
     {% endif %}
-    {% if entry.month %}
-      {% capture entrymonth %}{{ " " }}{{ entry.month | capitalize }}{% endcapture %}
+    {% if entry.volume %}
+      {% capture entryvolume %}{{entry.volume}}{% endcapture %}
+    {% endif %}
+    {% if entry.pages %}
+      {% capture entrypages %}{{entry.pages}}{% endcapture %}
     {% endif %}
     {% if entry.year %}
-      {% capture entryyear %}{{ " " }}{{entry.year}}{% endcapture %}
+      {% capture entryyear %}{{entry.year}}{% endcapture %}
     {% endif %}
     {% assign entrytype_text = entrytype | strip_html | strip %}
-    {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
+    {% capture periodical %}
+      {{ entrytype }}{% if entry.volume %}, {{ entryvolume }}{% endif %}{% if entry.pages != ""%}, {{ entrypages }}{% endif %}{% if entrytype_text != "" and entryyear != "" %}, 
+      {{ entryyear }}
+      {% endif %}
+    {% endcapture %}
     <div class="periodical">
       {{ periodical | strip }}
     </div>
@@ -162,9 +169,7 @@
       {% if entry.arxiv %}
         <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
       {% endif %}
-      {% if entry.bibtex_show %}
-        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-      {% endif %}
+      <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
       {% if entry.html %}
         <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
       {% endif %}
@@ -207,6 +212,15 @@
       {% endif %}
       {% if entry.website %}
         <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
+      {% endif %}
+      {% if entry.url %}
+        <a href="{{ entry.url }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
+      {% endif %}
+      {% if entry.ar %}
+        <a class="btn btn-sm z-depth-0" role="button">Acceptance Rate: {{ entry.ar }}</a>
+      {% endif %}
+      {% if entry.bestpaper %}
+        <a class="btn btn-sm z-depth-0" role="button">Best Paper Award</a>
       {% endif %}
     </div>
     {% if site.enable_publication_badges %}
@@ -274,14 +288,13 @@
       </div>
     {% endif %}
 
-    {% if entry.bibtex_show %}
+    
       <!-- Hidden bibtex block -->
       <div class="bibtex hidden">
         {% highlight bibtex %}
         {{- entry.bibtex | hideCustomBibtex -}}
         {% endhighlight %}
       </div>
-    {% endif %}
 
     {% if entry.video %}
       <!-- Hidden video block -->

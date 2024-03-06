@@ -1,34 +1,22 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"tso":
+  - firstname: ["Raylin"]
+    url: https://www.cs.nccu.edu.tw/islab/advisor.html
 
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"mambo":
+  - firstname: ["Masahiro"]
+    url: https://iseclab.ec.t.kanazawa-u.ac.jp/en/mambo/index.html
 
-"rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"wang":
+  - firstname: ["Peter Shaojui"]
+    url: https://sites.google.com/view/shaojuiwang
 
-"bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"chen":
+  - firstname: ["Chien-Ming"]
+    url: https://sites.google.com/view/chienmingchen/home?authuser=0
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+  - firstname: ["Yu-Chi"]
+    url: https://wycchen.github.io/
 
-"przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
-
-"schrodinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
-
-"lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
-
-"planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"tseng":
+  - firstname: ["Yi-Fan"]
+    url: https://dblp.org/pid/143/1242.html

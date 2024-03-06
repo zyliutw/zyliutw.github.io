@@ -1,0 +1,20 @@
+{
+  "name": "json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jsonresume-theme-boilerplate": "^0.1.2",
+    "jsonresume-theme-even": "^0.22.0",
+    "jsonresume-theme-kendall": "^0.2.0",
+    "jsonresume-theme-kwan": "^0.0.2",
+    "jsonresume-theme-latte": "^1.0.2",
+    "resume-cli": "^3.0.0"
+  }
+}

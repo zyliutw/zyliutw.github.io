@@ -1,69 +1,130 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
-    "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
-    "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
-    },
+    "name": "Zi-Yuan Liu",
+    "label": "Ph.D. Student @ Kanazawa University",
+    "email": "liuzy.tw@gmail.com",
+    "url": "https://zyliutw.github.io/",
+    "specialties": "Cryptography, Information Security",
     "profiles": [
       {
         "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "username": "zyliutw",
+        "url": "https://twitter.com/zyliutw"
       }
     ]
   },
-  "work": [
-    {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
-    }
-  ],
-  "volunteer": [
-    {
-      "organization": "People's Climate March",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
-    }
-  ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
+      "institution": "Kanazawa University",
+      "location": "Kanazawa, Japan",
+      "url": "https://www.kanazawa-u.ac.jp/e/",
+      "area": "Electrical Engineering and Computer Science",
+      "studyType": "Ph.D. (Double-Degree Program)",
+      "startDate": "2019.10",
+      "endDate": "",
+      "advisor": "Dr. Masahiro Mambo"
+    },
+    {
+      "institution": "National Chengchi University",
+      "location": "Taipei, Taiwan",
+      "url": "https://www.nccu.edu.tw/",
+      "area": "Computer Science",
+      "studyType": "Ph.D.",
+      "startDate": "2019.09",
+      "endDate": "2023.11",
+      "advisor": "Dr. Raylin Tso"
+    },
+    {
+      "institution": "National Chengchi University",
+      "location": "Taipei, Taiwan",
+      "url": "https://www.nccu.edu.tw/",
+      "area": "Computer Science",
+      "studyType": "M.S.",
+      "startDate": "2016.09",
+      "endDate": "2019.06",
+      "advisor": "Dr. Raylin Tso"
+    },
+    {
+      "institution": "National Tsing Hua University",
+      "url": "https://www.nthu.edu.tw/",
+      "studyType": "B.S.",
+      "location": "Hsinchu, Taiwan",
+      "startDate": "2012.09",
+      "endDate": "2016.06"
+    }
+  ],
+  "experience": [
+    {
+      "institution": "Kanazawa University",
+      "studyType": "Short-Term Program",
+      "location": "Kanazawa, Japan",
+      "startDate": "2018.03",
+      "endDate": "2018.05",
+      "url": "https://www.kanazawa-u.ac.jp/e/",
+      "advisor": "Dr. Masahiro Mambo"
+    },
+    {
+      "institution": "Academic Sinica",
+      "studyType": "Summer Intern",
+      "location": "Taipei, Taiwan",
+      "startDate": "2017.06",
+      "endDate": "2017.08",
+      "url": "https://www.sinica.edu.tw/",
+      "advisor": "Dr. Bow-Yaw Wang"
+    },
+    {
+      "institution": "National Chengchi University",
+      "studyType": "Teaching Assistant",
+      "location": "Taipei, Taiwan",
+      "startDate": "2016.08",
+      "endDate": "2022.07",
+      "advisor": "Dr. Raylin Tso, Dr. Yi-Fan Tseng, and Dr. Peter Shaojui Wang",
+      "url": "https://www.nccu.edu.tw/",
+      "courses": ["Contemporary Cryptography: Spring 2022",
+                  "Cryptographic Protocol Design and Analysis: Spring 2022",
+                  "Artificial Intelligence and Its Applications to Information Security: Spring 2022",
+                  "Information Security: Fall 2021",
+                  "Discrete Mathematics: Fall 2021",
+                  "Artificial Intelligence and Its Applications to Information Security: Spring 2021",
+                  "Security and Privacy in Machine Learning: Fall 2019",
+                  "Programming 101: Spring 2019",
+                  "Introduction to Computer Science: Fall 2018",
+                  "Exploring the Digital Wonderland: Fall 2016 - Spring 2017"]
+    },
+    {
+      "institution": "Kanazawa University",
+      "studyType": "Research Assistant",
+      "location": "Kanazawa, Japan",
+      "startDate": "2021.02",
+      "endDate": "2023.01",
+      "advisor": "Dr. Masahiro Mambo",
+      "url": "https://www.nccu.edu.tw/",
+      "courses": ["耐量子計算機暗号向け要素技術に関する研究: Spring 2021 - Fall 2021",
+              "耐量子計算機暗号の仕組みとに関する研究: Fall 2022"]
     }
   ],
   "awards": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+      "title": "Hon Hai Technology Award",
+      "date": "2023"
+    },
+    {
+      "title": "JASSO Scholarship",
+      "date": "2022 - 2023"
+    },
+    {
+      "title": "Best Paper Award",
+      "date": "2021",
+      "summary": "The 16th Asia Joint Conference on Information Security (AisaJCIS), Koera"
+    },
+    {
+      "title": "MOST/NSTC Scholarship Pilot Program to Cultivate Outstanding Doctoral Students",
+      "date": "2019 - 2022"
+    },
+    {
+      "title": "Best Student Paper Award",
+      "date": "2017",
+      "summary": "The 27th Information Security Conference (CISC), Taiwan"
     }
   ],
   "certificates": [
