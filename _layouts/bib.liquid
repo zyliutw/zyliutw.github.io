@@ -288,13 +288,12 @@
       </div>
     {% endif %}
 
-    
-      <!-- Hidden bibtex block -->
-      <div class="bibtex hidden">
-        {% highlight bibtex %}
-        {{- entry.bibtex | hideCustomBibtex -}}
-        {% endhighlight %}
-      </div>
+    <!-- Hidden bibtex block -->
+    <div class="bibtex hidden">
+      {% highlight bibtex %}
+      {{- entry.bibtex | hideCustomBibtex -}}
+      {% endhighlight %}
+    </div>
 
     {% if entry.video %}
       <!-- Hidden video block -->

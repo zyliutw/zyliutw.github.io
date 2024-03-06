@@ -3,17 +3,16 @@ layout: default
 ---
 <div class="post">
   <header class="post-header">
-    <h1 class="post-title" display=inline-block;>
-    <img src="/assets/img/photo.png" width="80px" height="80px">
+    <h1 class="post-title" display="inline-block;">
+      <img src="/assets/img/photo.png" width="80px" height="80px">
       {% if site.title == 'blank' %}
         <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
         {{ site.last_name }}
       {% else %}
         {{ site.title }}
       {% endif %}
-      
     </h1>
-    
+
     <p class="desc">{{ page.subtitle }}</p>
   </header>
 
@@ -36,7 +35,8 @@ layout: default
       {% include latest_posts.liquid %}
     {% endif %}
 
-    <br><br>
+    <br>
+    <br>
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h3>selected publications</h3>
@@ -44,7 +44,8 @@ layout: default
       {% include selected_papers.liquid %}
     {% endif %}
 
-<br><br>
+    <br>
+    <br>
     <!-- Social -->
     {% if page.social %}
       <div class="social">

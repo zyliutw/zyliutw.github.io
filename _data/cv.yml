@@ -17,7 +17,7 @@
       description:
         - Electrical Engineering and Computer Science
         - "Advisor: Dr. Masahiro Mambo"
-        
+
     - title: Ph.D. in Science
       institution: National Chengchi University, Taiwan
       year: 2019.09 - 2023.11
@@ -75,7 +75,6 @@
         - "耐量子計算機暗号向け要素技術に関する研究: Spring 2021 - Fall 2021"
         - "耐量子計算機暗号の仕組みとに関する研究: Fall 2022"
 
-
 - title: Honors and Awards
   type: time_table
   contents:
@@ -100,21 +99,21 @@
 - title: Serving as Reviewer
   type: time_table
   contents:
-        - year:
-          items:
-          - Cluster Computing
-          - Computer Standards & Interfaces
-          - Designs, Codes and Cryptography
-          - IEEE Systems Journal
-          - IEEE Internet of Things Journal
-          - IEEE Access
-          - International Journal of Information and Computer Security
-          - International Journal of Information Security
-          - Journal of Information Security and Applications
-          - Journal of Information Science and Engineering
-          - Journal of Systems Architecture
-          - Peer-to-Peer Networking and Applications
-          - Security and Communication Networks
-          - The Computer Journal
-          - The Journal of Supercomputing
-          - Theoretical Computer Science
+    - year:
+      items:
+        - Cluster Computing
+        - Computer Standards & Interfaces
+        - Designs, Codes and Cryptography
+        - IEEE Systems Journal
+        - IEEE Internet of Things Journal
+        - IEEE Access
+        - International Journal of Information and Computer Security
+        - International Journal of Information Security
+        - Journal of Information Security and Applications
+        - Journal of Information Science and Engineering
+        - Journal of Systems Architecture
+        - Peer-to-Peer Networking and Applications
+        - Security and Communication Networks
+        - The Computer Journal
+        - The Journal of Supercomputing
+        - Theoretical Computer Science

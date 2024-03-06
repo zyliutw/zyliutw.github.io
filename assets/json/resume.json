@@ -80,16 +80,18 @@
       "endDate": "2022.07",
       "advisor": "Dr. Raylin Tso, Dr. Yi-Fan Tseng, and Dr. Peter Shaojui Wang",
       "url": "https://www.nccu.edu.tw/",
-      "courses": ["Contemporary Cryptography: Spring 2022",
-                  "Cryptographic Protocol Design and Analysis: Spring 2022",
-                  "Artificial Intelligence and Its Applications to Information Security: Spring 2022",
-                  "Information Security: Fall 2021",
-                  "Discrete Mathematics: Fall 2021",
-                  "Artificial Intelligence and Its Applications to Information Security: Spring 2021",
-                  "Security and Privacy in Machine Learning: Fall 2019",
-                  "Programming 101: Spring 2019",
-                  "Introduction to Computer Science: Fall 2018",
-                  "Exploring the Digital Wonderland: Fall 2016 - Spring 2017"]
+      "courses": [
+        "Contemporary Cryptography: Spring 2022",
+        "Cryptographic Protocol Design and Analysis: Spring 2022",
+        "Artificial Intelligence and Its Applications to Information Security: Spring 2022",
+        "Information Security: Fall 2021",
+        "Discrete Mathematics: Fall 2021",
+        "Artificial Intelligence and Its Applications to Information Security: Spring 2021",
+        "Security and Privacy in Machine Learning: Fall 2019",
+        "Programming 101: Spring 2019",
+        "Introduction to Computer Science: Fall 2018",
+        "Exploring the Digital Wonderland: Fall 2016 - Spring 2017"
+      ]
     },
     {
       "institution": "Kanazawa University",
@@ -99,8 +101,7 @@
       "endDate": "2023.01",
       "advisor": "Dr. Masahiro Mambo",
       "url": "https://www.nccu.edu.tw/",
-      "courses": ["耐量子計算機暗号向け要素技術に関する研究: Spring 2021 - Fall 2021",
-              "耐量子計算機暗号の仕組みとに関する研究: Fall 2022"]
+      "courses": ["耐量子計算機暗号向け要素技術に関する研究: Spring 2021 - Fall 2021", "耐量子計算機暗号の仕組みとに関する研究: Fall 2022"]
     }
   ],
   "awards": [
