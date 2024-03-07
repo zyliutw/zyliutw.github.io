@@ -78,6 +78,9 @@
 - title: Honors and Awards
   type: time_table
   contents:
+    - year: 2024
+      items:
+        - Professor Chi-Sung Laih Paper Award, CCISA, Taiwan
     - year: 2023
       items:
         - Hon Hai Technology Award
@@ -104,9 +107,10 @@
         - Cluster Computing
         - Computer Standards & Interfaces
         - Designs, Codes and Cryptography
-        - IEEE Systems Journal
-        - IEEE Internet of Things Journal
         - IEEE Access
+        - IEEE Internet of Things Journal
+        - IEEE Systems Journal
+        - IEEE Transactions on Dependable and Secure Computing
         - International Journal of Information and Computer Security
         - International Journal of Information Security
         - Journal of Information Security and Applications

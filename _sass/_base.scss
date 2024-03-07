@@ -706,6 +706,7 @@ footer.sticky-bottom {
         margin-bottom: 0.5rem;
 
         abbr {
+          min-width: 95px;
           display: inline-block;
           background-color: var(--global-theme-color);
           padding-left: 1rem;
@@ -776,7 +777,6 @@ footer.sticky-bottom {
 
       .badges {
         padding-bottom: 0.5rem;
-        min-width: 95px;
         span {
           display: inline-block;
           color: $black-color;
