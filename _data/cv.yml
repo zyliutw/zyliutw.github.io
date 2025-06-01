@@ -102,28 +102,25 @@
       items:
         - Best Student Paper Award @ The 27th Information Security Conference (CISC), Taiwan
 
-- title: Academic Service - Reviewer
+- title: Academic Service - Reviewer (Selected)
   type: time_table
   contents:
     - year:
       items:
-        - Cluster Computing
         - Computer Standards & Interfaces
         - Computer Networks
         - Designs, Codes and Cryptography
-        - IEEE Access
         - IEEE Internet of Things Journal
         - IEEE Systems Journal
         - IEEE Transactions on Dependable and Secure Computing
         - IEEE Transactions on Information Forensics & Security
+        - IEEE Transactions on Mobile Computing
         - Information Processing and Management
         - International Journal of Information and Computer Security
         - International Journal of Information Security
         - Journal of Information Security and Applications
         - Journal of Information Science and Engineering
         - Journal of Systems Architecture
-        - Peer-to-Peer Networking and Applications
         - Security and Communication Networks
         - The Computer Journal
-        - The Journal of Supercomputing
         - Theoretical Computer Science
