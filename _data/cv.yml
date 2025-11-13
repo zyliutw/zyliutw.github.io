@@ -37,6 +37,13 @@
 - title: Experience
   type: time_table
   contents:
+    - title: Research Assistant
+      institution: Kanazawa University, Japan
+      year: 2021.02 - 2023.01
+      description:
+        - "耐量子計算機暗号向け要素技術に関する研究: Spring 2021 - Fall 2021"
+        - "耐量子計算機暗号の仕組みとに関する研究: Fall 2022"
+        
     - title: Short-Term Program
       institution: Kanazawa University, Japan
       year: 2018.03 - 2018.05
@@ -63,13 +70,6 @@
         - "Programming 101: Spring 2019"
         - "Introduction to Computer Science: Fall 2018"
         - "Exploring the Digital Wonderland: Fall 2016 - Spring 2017"
-
-    - title: Research Assistant
-      institution: Kanazawa University, Japan
-      year: 2021.02 - 2023.01
-      description:
-        - "耐量子計算機暗号向け要素技術に関する研究: Spring 2021 - Fall 2021"
-        - "耐量子計算機暗号の仕組みとに関する研究: Fall 2022"
 
 - title: Honors and Awards
   type: time_table
