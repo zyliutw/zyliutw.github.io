@@ -127,3 +127,11 @@
         - Security and Communication Networks
         - The Computer Journal
         - Theoretical Computer Science
+
+- title: Academic Service
+  type: time_table
+  contents:
+    - year:
+      items:
+         - Session Chair: IEEE DSC 2025
+         - Program Committee: APKC 2026
