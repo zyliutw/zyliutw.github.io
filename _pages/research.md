@@ -47,7 +47,7 @@ We bridge the gap between theory and practice by securing real-world systems.
 ### Post-Quantum Cryptography (PQC)
 
 The rise of quantum computing poses an existential threat to current encryption standards (like RSA and ECC). To protect national security and long-term data confidentiality, we are actively researching **Post-Quantum Cryptography**.
-* **Lattice-based Cryptography:** We design and evaluate lattice-based algorithms, which are currently the most promising candidates for standardization (e.g., NIST PQC) due to their efficiency and strong security guarantees against quantum attacks.
+* **Lattice-based Cryptography:** We design and evaluate lattice-based algorithms, which have been adopted as official standards (e.g., NIST PQC) due to their efficiency and strong security guarantees against quantum attacks.
 ---
 
 ## 3. Privacy-Preserving Technologies
@@ -55,7 +55,7 @@ The rise of quantum computing poses an existential threat to current encryption 
 To enable secure AI training and data analysis, we focus on three core technologies that allow computation on sensitive data without leaking information:
 
 ### Differential Privacy (DP)
-DP provides a rigorous mathematical definition of privacy by injecting calibrated noise into datasets. We research how to apply DP mechanisms to machine learning models (e.g., DP-SGD), ensuring that the output of a model reveals nothing about any specific individual's data—a standard now adopted by Apple and Google.
+DP provides a rigorous mathematical definition of privacy by injecting calibrated noise into datasets. We research how to apply DP mechanisms to machine learning models  ensuring that the output of a model reveals nothing about any specific individual's data.
 
 ### Secure Multi-Party Computation (MPC)
 MPC enables multiple parties (such as different hospitals or financial institutions) to jointly compute a function over their inputs while keeping those inputs private. Our research focuses on optimizing MPC protocols to facilitate secure **Federated Learning**, allowing organizations to collaborate on model training without ever sharing raw data.
