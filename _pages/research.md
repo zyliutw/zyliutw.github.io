@@ -9,9 +9,6 @@ nav_order: 2
 Our research is dedicated to solving the most critical security challenges of the digital age. We explore the theoretical limits and design practical defense mechanisms across three topics.
 
 ---
-Our research is dedicated to solving the most critical security challenges of the digital age. We explore the theoretical limits and design practical defense mechanisms across three topics.
-
----
 <br>
 #### 1. The Intersection of AI & Cybersecurity
 
