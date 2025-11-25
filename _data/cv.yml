@@ -135,3 +135,14 @@
       items:
          - "Session Chair: IEEE DSC 2025"
          - "Program Committee: APKC 2026"
+         - "Review Committee: Professor Chi-Sung Laih Paper Award 2025"
+
+- title: Project
+  type: time_table
+  contents:
+  -year:
+  items:
+  - "推動後量子密碼遷移討論活動與協助廠商輔導(財團法人資訊工業策進會) - 協同主持人"
+  - "國防先進科技研究計畫-將分散式儲存與搜尋系統運用於戰術數據資料-子計畫一: 適用後量子技術之研究 - 共同主持人"
+  - "金融科技應用中的前瞻資安技術開發(2/2)-子計畫七: 適用於金融科技之後量子密碼系統設計與分析(國科會) - 協同主持人"
+  - "具身分認證之盲式基於身分加密架構之身分撤銷機制設計(國科會) - 計畫主持人"
