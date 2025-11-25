@@ -2,7 +2,6 @@
 layout: page
 title: research
 permalink: /research/
-description: Exploring the intersection of AI Security, Privacy Protection, and Modern Cryptography.
 nav: true
 nav_order: 2
 ---
