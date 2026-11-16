@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://zyliutw.github.io//sitemap.xml
+Sitemap: https://zyliutw.github.io/sitemap.xml
