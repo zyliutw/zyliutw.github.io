@@ -41,7 +41,12 @@
   <!-- Entry bib key -->
   <div id="{{entry.key}}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
     <!-- Title -->
-    <div class="title">{{ entry.title }}</div>
+    {% assign publication_label = site.data.publication_labels[entry.key] %}
+    <div class="title">
+      {% comment %} numbering is shown on the publications page only, not in the selected list on the home page {% endcomment %}
+      {% if publication_label and page.layout != 'about' %}<span class="publication-label">[{{ publication_label }}]</span>{% endif %}
+      {{ entry.title }}
+    </div>
     <!-- Author -->
     <div class="author">
       {% assign author_array_size = entry.author_array | size %}

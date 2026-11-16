@@ -732,6 +732,13 @@ footer.sticky-bottom {
 
       .title {
         font-weight: bolder;
+
+        // J1, J2, ... / C1, C2, ... numbering (see _plugins/publication-labels.rb)
+        .publication-label {
+          color: var(--global-theme-color);
+          margin-right: 0.15rem;
+          white-space: nowrap;
+        }
       }
 
       .author {
