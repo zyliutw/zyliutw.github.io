@@ -707,13 +707,38 @@ footer.sticky-bottom {
       .abbr {
         height: 2rem;
         margin-bottom: 0.5rem;
+        white-space: nowrap;
+
+        // J1, J2, ... / C1, C2, ... / E1, ... numbering (see _plugins/publication-labels.rb)
+        .publication-label {
+          display: inline-block;
+          min-width: 1.9rem;
+          margin-right: 0.3rem;
+          color: var(--global-theme-color);
+          font-size: 0.85rem;
+          font-weight: 500;
+        }
+
+        // the badge column is narrow on tablets: tighten it so long venue names stay clear of the title
+        @media (min-width: 768px) and (max-width: 991.98px) {
+          .publication-label {
+            min-width: 1.7rem;
+            margin-right: 0.15rem;
+          }
+
+          abbr {
+            min-width: 64px !important;
+            padding-left: 0.3rem !important;
+            padding-right: 0.3rem !important;
+          }
+        }
 
         abbr {
-          min-width: 95px;
+          min-width: 80px;
           display: inline-block;
           background-color: var(--global-theme-color);
-          padding-left: 1rem;
-          padding-right: 1rem;
+          padding-left: 0.6rem;
+          padding-right: 0.6rem;
 
           a {
             color: white;
@@ -730,15 +755,18 @@ footer.sticky-bottom {
         }
       }
 
+      // between phone and tablet widths the badge column is too narrow for a badge at all:
+      // put the badge on its own line above the entry, as on phones
+      @media (min-width: 576px) and (max-width: 767.98px) {
+        .row > .abbr,
+        .row > .col-sm-8 {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+      }
+
       .title {
         font-weight: bolder;
-
-        // J1, J2, ... / C1, C2, ... numbering (see _plugins/publication-labels.rb)
-        .publication-label {
-          color: var(--global-theme-color);
-          margin-right: 0.15rem;
-          white-space: nowrap;
-        }
       }
 
       .author {

@@ -1,8 +1,15 @@
 ---
 ---
+{% comment %} J/C/E numbering (see _plugins/publication-labels.rb); shown next to the venue badge on the
+publications page only, not in the selected list on the home page {% endcomment %}
+{% assign publication_label = nil %}
+{% if page.layout != 'about' %}
+  {% assign publication_label = site.data.publication_labels[entry.key] %}
+{% endif %}
 <div class="row">
   {% if site.enable_publication_thumbnails %}
     <div class="col-sm-2 {% if entry.preview %}preview{% else %}abbr{% endif %}">
+      {% if publication_label %}<span class="publication-label">{{ publication_label }}</span>{% endif %}
       {% if entry.preview %}
         {% if entry.preview contains '://' %}
           <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
@@ -41,12 +48,7 @@
   <!-- Entry bib key -->
   <div id="{{entry.key}}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
     <!-- Title -->
-    {% assign publication_label = site.data.publication_labels[entry.key] %}
-    <div class="title">
-      {% comment %} numbering is shown on the publications page only, not in the selected list on the home page {% endcomment %}
-      {% if publication_label and page.layout != 'about' %}<span class="publication-label">[{{ publication_label }}]</span>{% endif %}
-      {{ entry.title }}
-    </div>
+    <div class="title">{{ entry.title }}</div>
     <!-- Author -->
     <div class="author">
       {% assign author_array_size = entry.author_array | size %}
@@ -138,7 +140,7 @@
     {% if entry.type == 'article' %}
       {% capture entrytype %}<em>{{entry.journal}}</em>{% endcapture %}
     {% elsif proceedings contains entry.type %}
-      {% capture entrytype %}<em>In {{entry.booktitle}}</em> {% endcapture %}
+      {% capture entrytype %}<em>In {{entry.booktitle}}</em>{% endcapture %}
     {% elsif thesis contains entry.type %}
       {% capture entrytype %}<em>{{entry.school}}</em> {% endcapture %}
     {% else %}
@@ -154,10 +156,13 @@
       {% capture entryyear %}{{entry.year}}{% endcapture %}
     {% endif %}
     {% assign entrytype_text = entrytype | strip_html | strip %}
+    {% comment %} do not repeat the year when the venue text (e.g. a proceedings title with its dates) already contains it {% endcomment %}
+    {% assign show_year = true %}
+    {% if entrytype_text == "" or entryyear == "" or entrytype_text contains entryyear %}
+      {% assign show_year = false %}
+    {% endif %}
     {% capture periodical %}
-      {{ entrytype }}{% if entry.volume %}, {{ entryvolume }}{% endif %}{% if entry.pages and entry.pages != "" %}, {{ entrypages }}{% endif %}{% if entrytype_text != "" and entryyear != "" %}, 
-      {{ entryyear }}
-      {% endif %}
+      {{ entrytype }}{% if entry.volume %}, {{ entryvolume }}{% endif %}{% if entry.pages and entry.pages != "" %}, {{ entrypages }}{% endif %}{% if show_year %}, {{ entryyear }}{% endif %}
     {% endcapture %}
     <div class="periodical">
       {{ periodical | strip }}

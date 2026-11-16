@@ -6,6 +6,8 @@
   year         = {2026}}
 
 @article{DBLP:journals/dcc/2026, abbr={DCC},
+  abstract     = {Receiver selective opening (RSO) security considers the security of encryption schemes under the scenario of a single sender and multiple receivers, where an adversary is allowed to adaptively corrupt some receivers’ secret keys. RSO security has been proven to be more secure than indistinguishability-based security notions. A lot of research has focused on RSO security in terms of public-key encryption and identity-based encryption (IBE); however, hierarchical IBE (HIBE), which is a generalization of IBE, is still lacking in the study, and how to obtain such a construction remains an open problem. To address this gap, we initiate a study of RSO security on HIBE in this work. Precisely, we first formalize the definition of simulation-based RSO against identity-chosen-plaintext/ciphertext attacks in the k-challenge setting (SIM-ID-RSO<sub>k</sub>-CPA/CCA) for HIBE. We then present generic SIM-ID-RSO<sub>k</sub>-CCA secure HIBE constructions by introducing the double secret key paradigm. Specifically, we show that a SIM-ID-RSO<sub>k</sub>-CCA secure HIBE scheme can be obtained from an IND-ID-CPA secure HIBE scheme as well as a one-time signature scheme that satisfies strong unforgeability. Through our general construction, we can derive various concrete schemes based on different hard assumptions (e.g., lattice-based and pairing-based SIM-ID-RSO<sub>k</sub>-CCA secure HIBE schemes) according to usage requirements.},
+  url          = {https://doi.org/10.1007/s10623-026-01885-z},
   author       = {Zi-Yuan Liu and Masahiro Mambo and Raylin Tso and Yi-Fan Tseng},
   title        = {Hierarchical identity-based encryption with receiver selective opening security in the multi-challenge setting},
   journal      = {Des. Codes Cryptogr.},
@@ -17,6 +19,9 @@
 }
 
 @article{DBLP:journals/tcs26,abbr= {TCS},
+  abstract     = {In this study, we revisit the cryptosystem termed public-key encryption with filtered equality test (PKEFET), originally devised by Huang et al. (<i>J. Comput. Syst. Sci.</i> 2017) and subsequently refined by Chen et al. (<i>Des. Codes Cryptogr.</i> 2021). This notion allows users to delegate the equality test functionality of ciphertexts to a tester, but only for ciphertexts associated with a selected message set. More specifically, consider two ciphertexts related to plaintexts <i>m</i> and <i>m</i>′, along with their respective tokens related to two plaintext sets <b><i>m</i></b> and <b><i>m</i></b>′. Assuming <i>m</i> ∈ <b><i>m</i></b> and <i>m</i>′ ∈ <b><i>m</i></b>′ hold simultaneously, then any tester has the ability to determine if the ciphertexts are associated with an identical plaintext (i.e., <i>m</i> = <i>m</i>′). With this functionality, PKEFET is valuable in applications such as encrypted data search and spam filtering. However, there exist several challenges in the current PKEFET schemes, such as: (i) security is limited to indistinguishability against “non-adaptive” chosen-ciphertext attacks (CCA1) and (ii) the computational and storage complexities scale linearly with the maximum number of plaintexts that a token can authenticate. To address these challenges, by employing public-key encryption and key-policy attribute-based encryption (KPABE) supporting OR-gate policies as the foundational building blocks, we propose a generic construction of PKEFET. In particular, we show that the required KPABE can be obtained from identity-based encryption. We demonstrate that the proposed construction satisfies one-wayness and indistinguishability under strong filtered equality test against adaptive chosen-ciphertext attacks (CCA2). Moreover, the resulting scheme has significant computational and storage complexity advantages compared to existing PKEFET schemes.},
+  doi          = {10.1016/j.tcs.2026.115744},
+  url          = {https://doi.org/10.1016/j.tcs.2026.115744},
   author       = {Zi{-}Yuan Liu and
                   Masahiro Mambo and
                   Raylin Tso and
@@ -26,23 +31,29 @@
   year         = {2026}}
 
 @inproceedings{tbd,abbr={ICISC},
+  abstract     = {Witness Encryption (WE) enables encryption under computational problems where decryption requires knowledge of a valid witness to a nondeterministic polynomial-time (NP) statement. While theoretical constructions exist for all NP languages using complex assumptions like multilinear maps, practical schemes remain limited to specialized relations. We present the first extractable Witness Key Encapsulation Mechanism (WKEM) for Quadratic Arithmetic Programs (QAPs), the mathematical foundation underlying modern zkSNARKs including Groth16. Our construction transforms Groth16’s verification equations into an encryption mechanism, enabling practical witness encryption for rich algebraic relations expressible as arithmetic circuits. We prove extractability in the Algebraic Group Model combined with the Random Oracle Model, providing a clean reduction to Groth16’s computational knowledge soundness without requiring novel assumptions. Our WKEM composes generically with symmetric encryption to yield a complete extractable WE scheme for QAP relations. We validate our construction through a complete implementation with practical performance: circuits with 162–150K constraints achieve encryption/decryption in ∼20 ms to ∼1.7 s. Our approach bridges the gap between WE theory and practice by building on the mature zkSNARK ecosystem while maintaining strong extractability guarantees.},
+  doi          = {10.1007/978-981-95-8034-7\_28},
+  url          = {https://doi.org/10.1007/978-981-95-8034-7_28},
   author       = {Tao{-}Hsiang Chang and Yu{-}Chen Wu and Zi{-}Yuan Liu and Jen{-}Chieh Hsu and Raylin Tso and Masahiro Mambo},
   title        = {A Witness Encryption for Quadratic Arithmetic Programs},
   booktitle    = {Information Security and Cryptology - {ICISC} 2025 - 28th International
                   Conference, {ICISC} 2025, Seoul, South Korea, November 19 - November
                   21, 2025},
   publisher    = {},
-  pages        = {},
+  pages        = {533--555},
   year         = {2025},
 }
 
 @inproceedings{DBLP:conf/SITAIBA,abbr={SITAIBA},
+  abstract     = {Digital signatures are essential for ensuring authenticity and integrity in digital communications. However, traditional schemes rely on public key infrastructures, which can be complex and difficult to manage at scale. Identity-based signature (IBS) schemes simplify key management by allowing arbitrary identifiers to serve as public keys, removing the need for digital certificates. Despite this advantage, IBS schemes suffer from the key escrow problem, as private keys are issued by a central authority, introducing risks of forgery and key compromise. To address this issue, we propose a novel registration-based signature scheme in which users independently generate their own key pairs and register their public keys on a public bulletin board. Our design uses vector commitments to allow efficient and non-interactive verification of registration and signature validity. This approach eliminates the key escrow risk while preserving the simplicity and practicality of identity-based cryptography, making it more suitable for decentralized and large-scale applications.},
+  doi          = {10.1007/978-3-032-24063-7\_22},
+  url          = {https://doi.org/10.1007/978-3-032-24063-7_22},
   author       = {He{-}Jun Huang and Zi{-}Yuan Liu and Hsu Chang and Yi{-}Fan Tseng},
   title        = {Efficient Registration-Based Signature},
   booktitle    = {International Conference on Security and Information Technologies with AI, Internet Computing and Big-data Applications, SITAIBA 2025,
                  New Taipei City, Taiwan, November 20–22, 2025},
   publisher    = {{Springer Cham}},
-  pages        = {},
+  pages        = {293--308},
   year         = {2025},
 }
 
@@ -50,19 +61,23 @@
 
 
 @inproceedings{DBLP:conf/asiajcis/Tseng25,abbr={AsiaJCIS},
+  abstract     = {We introduce a novel Public Key Encryption with Equality Test supporting Flexible Authorization scheme offering User-Level, Ciphertext-Level, and User-Specific-Ciphertext-Level authorizations. Notably, our construction achieves security under the Decisional Diffie-Hellman assumption with a tight reduction, whereas the existing works are either not tightly secure or rely heavily on the random oracles. By relying solely on the standard DDH assumption, our scheme offers practical implementation without specialized cryptographic structures.},
+  doi          = {10.29007/f9gd},
+  url          = {https://doi.org/10.29007/f9gd},
   author       = {Yi{-}Fan Tseng and
                   Yi{-}Jiin Lu and
                   Tien{-}Lin Tsai and
                   Zi{-}Yuan Liu},
   title        = {Tightly Secure Public-Key Encryption with Equality Test Supporting Flexible Authorization in the Standard Model},
   booktitle    = {20th Asia Joint Conference on Information Security, AsiaJCIS 2025,
-                  Seoul, Republic of Korea, August 12-13, 2024},
+                  Seoul, Republic of Korea, August 12-13, 2025},
   publisher    = {{IEEE}},
   pages        = {},
   year         = {2025},
 }
 
 @article{DBLP:journals/iet-ifs/24,abbr= {IET Inf. Secur.},
+  url          = {https://doi.org/10.1049/2024/5535196},
   author       = {Cheng{-}Yi Lee and
                   Zi{-}Yuan Liu and
                   Masahiro Mambo and
@@ -77,6 +92,7 @@
 }
 
 @article{wang,
+  abstract     = {With the widespread adoption and increasing application of blockchain technology, cryptocurrency wallets used in Bitcoin and Ethereum play a crucial role in facilitating decentralized asset management and secure transactions. However, wallet security relies heavily on private keys, with insufficient attention to the risks of theft and exposure. To address this issue, Chaum et al. (ACNS’21) proposed a “proof of ownership” method using a “backup key” to prove ownership of private keys even when exposed. However, their interactive proof approach is inefficient in large-scale systems and vulnerable to side-channel attacks due to the long key generation time. Other related schemes also suffer from low efficiency and complex key management, increasing the difficulty of securely storing backup keys. In this paper, we present an efficient, non-interactive proof generation approach for ownership of secret keys using a single backup key. Our approach leverages non-interactive zero-knowledge proofs and symmetric encryption, allowing users to generate multiple proofs with one fixed backup key, simplifying key management. Additionally, our scheme resists quantum attacks and provides a fallback signature. Our new scheme can be proved to capture unforgeability under the computational indistinguishability from the Uniformly Random Distribution property of a proper hash function and soundness in the quantum random oracle model. Experimental results indicate that our approach achieves a short key generation time and enables an efficient proof generation scheme in large-scale decentralized systems. Compared with state-of-the-art schemes, our approach is applicable to a broader range of scenarios due to its non-interactive nature, short key generation time, high efficiency, and simplified key management system.},
 abbr= {Crypto.},
   author       = {Chen Wang and Zi{-}Yuan Liu and Masahiro Mambo},
   title        = {On the Proof of Ownership of Digital Wallets},
@@ -90,6 +106,9 @@ number = {4},
 }
 
 @inproceedings{DBLP:conf/asiajcis/Tseng24,abbr={AsiaJCIS},
+  abstract     = {The rise of streaming platforms has underscored the importance of traitor tracing technology in safeguarding digital content from unauthorized distribution. Traitor tracing serves as a crucial tool for enhancing content piracy by tracing the sources of leaked or illicitly distributed content. This paper focuses on the issue of ID-based traitor tracing, utilizing a relaxed black-box approach to achieve trace efficiency similar to white-box tracing, while maintaining the feasibility of black-box setting in practice. Two schemes are proposed in this work, each proven secure under the DBDH assumption. Additionally, the proposed schemes also support group-based services. Compared to existing related works, our schemes offer efficient tracing and support for group-based services and applications in the streaming platform era, highlighting the importance of traitor tracing.},
+  doi          = {10.1109/ASIAJCIS64263.2024.00016},
+  url          = {https://doi.org/10.1109/ASIAJCIS64263.2024.00016},
   author       = {Yi{-}Fan Tseng and
                   Raylin Tso and
                   Shi{-}Sheng Sun and
@@ -133,6 +152,7 @@ number = {4},
 }
 
 @article{DBLP:journals/access/ZhengLM23,
+  abstract     = {Fuzzy signatures (FS) are a kind of signature scheme that employs a noisy string (e.g., biometric data) as the secret key without requiring the user-specific auxiliary data. As the quantum computing era approaches, some research has been dedicated to developing quantum-resistant FS schemes, which can be classified into fuzzy extractor (FE) approach and linear sketch (LS) approach. However, the existing schemes utilizing FEs to obtain (variants of) fuzzy signatures require to produce the user-specific auxiliary information known as helper data to retrieve secret keys, leading to an additional computational cost. In light of the circumstance, we seek to construct a fuzzy signature scheme by employing a linear sketch, since this approach does not require the user-specific auxiliary data to derive secret keys. We modify the linear sketch which is an essential ingredient of the most practical fuzzy signature proposed by Katsumata et al. (CCS’ 21). Then we combine it with Lyubashevsky’s lattice-based signature scheme (EUROCRYPT’ 12) to construct our lattice-based fuzzy signature scheme. Moreover, to further demonstrate the security of our proposed scheme, we provide a rigorous security proof in the random oracle model. Finally, the comparison indicates that our proposed FS scheme not only avoids the use of FE but also shows a promising tendency in efficiency among the existing quantum-resistant FS schemes.},
 abbr= {IEEE Access},
   author       = {Mingmei Zheng and
                   Zi{-}Yuan Liu and
@@ -148,6 +168,7 @@ abbr= {IEEE Access},
 }
 
 @article{DBLP:journals/ipl/LiuTT23,abbr= {IPL},
+  abstract     = {Kansal and Dutta recently proposed a multisignature scheme at AFRICACRYPT 2020. This is the first lattice-based multisignature scheme that generates a multisignature in only a single round of interaction and supports public key aggregation. In this letter, we provide a cryptanalysis of this multisignature scheme and demonstrate that the scheme does not satisfy unforgeability requirements. We present an attack strategy to demonstrate that if an adversary obtains a sufficient number of signatures from a signer, he/she can recover the private key of the signer in polynomial time. We also uncover the root cause of the attack and provide a possible solution for this attack to aid future designs of secure multisignature schemes.},
   author       = {Zi{-}Yuan Liu and
                   Yi{-}Fan Tseng and
                   Raylin Tso},
@@ -161,6 +182,7 @@ abbr= {IEEE Access},
 }
 
 @article{DBLP:journals/corr/abs-2311-08813,abbr= {arXiv},
+  abstract     = {Recently, Yang et al. introduced an efficient searchable encryption scheme titled "Dynamic Consensus Committee-Based for Secure Data Sharing With Authorized Multi-Receiver Searchable Encryption (DCC-SE)," published in IEEE Transactions on Information Forensics and Security (DOI: 10.1109/TIFS.2023.3305183). According to the authors, DCC-SE meets various security requirements, especially the keyword trapdoor indistinguishability against chosen keyword attacks (KT-IND-CKA). In this letter, however, we reveal a significant vulnerability of DCC-SE: any users involved in the system can execute attacks against KT-IND-CKA security. This flaw potentially results in the unintended disclosure of sensitive keyword information related to the documents. We present a detailed cryptanalysis on DCC-SE. In addition, to address this vulnerability, we discuss the root cause and identify a flaw in the security proof of DCC-SE. Subsequently, we provide a solution that effectively addresses this concern without significantly increasing computational overhead.},
   author       = {Zi{-}Yuan Liu and
                   Raylin Tso},
   title        = {Comments on ``Dynamic Consensus Committee-Based for Secure Data Sharing
@@ -175,6 +197,7 @@ abbr= {IEEE Access},
 }
 
 @article{DBLP:journals/cj/LiuTTMC22,abbr= {Comput. J.},
+  abstract     = {The industrial Internet of Things (IIoT) integrates sensors, instruments, equipment and industrial applications, enabling traditional industries to automate and intelligently process data. To reduce the cost and demand of required service equipment, IIoT relies on cloud computing to further process and store data. Public-key encryption with keyword search (PEKS) plays an important role, due to its search functionality, to ensure the privacy and confidentiality of the outsourced data and the maintenance of flexibility in the use of the data. Recently, Huang and Li proposed the ‘public-key authenticated encryption with keyword search’ (PAEKS) to avoid the insider keyword guessing attacks (IKGAs) in the previous PEKS schemes. However, all current PAEKS schemes are based on the discrete logarithm assumption and are therefore vulnerable to quantum attacks. In this study, we first introduce a generic PAEKS construction, with the assistance of a trusted authority, that enjoys the security against IKGA in the standard model, if all building blocks are secure under standard model. Based on the framework, we further propose a novel instantiation of quantum-resistant PAEKS that is based on NTRU assumption under random oracle. Compared with its state-of-the-art counterparts, the experiment result indicates that our instantiation is more efficient and secure.},
   author       = {Zi{-}Yuan Liu and
                   Yi{-}Fan Tseng and
                   Raylin Tso and
@@ -192,6 +215,7 @@ abbr= {IEEE Access},
 }
 
 @article{DBLP:journals/iet-ifs/LiuTTMC22,abbr= {IET Inf. Secur.},
+  abstract     = {Identity‐based encryption (IBE), introduced by Shamir, eliminates the need for public‐key infrastructure. The sender can simply encrypt a message by using the recipient's identity (such as email or IP address) without needing to look up the public key. In particular, when ciphertexts of an IBE do not reveal recipient's identity, this scheme is known as an anonymous IBE scheme. Recently, Blazy et al. (ARES '19) analysed the trade‐off between public safety and unconditional privacy in anonymous IBE and introduced a new notion that incorporates traceability into anonymous IBE, called anonymous IBE with traceable identities (AIBET). However, their construction is based on the discrete logarithm assumption, which is insecure in the quantum era. In this paper, we first formalize the consistency of tracing key of the AIBET scheme to ensure that a ciphertext cannot be traced with the use of wrong tracing keys. Subsequently, we present a generic formulation concept that can be used to transform structure‐specific lattice‐based anonymous IBE schemes into an AIBET. Finally, we apply this concept to Katsumata and Yamada's compact anonymous IBE scheme (Asiacrypt '16) to obtain the first quantum‐resistant AIBET scheme that is adaptively secure under the ring learning with errors assumption without random oracle.},
   author       = {Zi{-}Yuan Liu and
                   Yi{-}Fan Tseng and
                   Raylin Tso and
@@ -209,6 +233,7 @@ abbr= {IEEE Access},
 }
 
 @article{DBLP:journals/istr/LiuTTWS22,abbr= {JISA},
+  abstract     = {In public key infrastructure, a certificate, issued by a certificate authority (CA), is used to guarantee the connection between a user and her/his public key. In order to improve the efficiency, the concept of implicit certificate protocol is introduced by Girault and Gönther. In the existing implicit certificate protocol, a user must issue a certificate request to the CA for each key pair. However, in certain applications (e.g., IoT, sensor networks, and cryptocurrency), a user (or a device) will have multiple public/private key pairs that are related to the same identity. Therefore, the communication cost will be linearly related to the number of key pairs the user has. Furthermore, the storage cost of a large number of certificates is not an ideal property in practice. In this paper, to address the above issues, we proposed two schemes from the most widely used elliptic curve Qu–Vanstone implicit certificate scheme (ECQV). In our first scheme, called M-ECQV I, an ECQV certificate holder, who obtains an ECQV certificate issued by the certificate authority, can further issue multiple credentials with the same identity as ECQV certificate holder and the corresponding key pairs from the ECQV certificate. In our second scheme, called M-ECQV II, it not only supports the comparable functionality of M-ECQV I, but the verifier can ensure that the credentials are only used by the ECQV certificate holder (i.e., these credential are “self-use”) to be suitable to different scenarios. In addition, the security models are well-defined and the rigorous security proofs are also given. Experimental results show that our schemes not only greatly improve the performance, but also reduce the storage cost.},
   author       = {Zi{-}Yuan Liu and
                   Yi{-}Fan Tseng and
                   Raylin Tso and
@@ -224,6 +249,7 @@ abbr= {IEEE Access},
 }
 
 @article{DBLP:journals/jsa/LeeLTT22, abbr={JSA},
+  abstract     = {Cloud-assisted industrial Internet of Things (IIoT) technology is increasingly used by related enterprises. To preserve the privacy of sensitive data, IIoT devices must encrypt data before sending them to a cloud server. Public-key encryption with keyword search (PEKS) provides an important search function over cloud-assisted IIoT, allowing users to search for encrypted data without decryption. To increase practical functionality, Zhang et al. recently proposed the concept of public-key encryption with bidirectional keyword search, which supports both sender and receiver searches. However, their scheme provides insufficient security because it cannot resist keyword guessing attacks (KGA). Additionally, their scheme requires time-consuming bilinear pairing operations, resulting in high computational costs. In this study, a novel concept called public-key authenticated encryption with bidirectional keyword search was devised for multi-user settings. The system definition and security requirements are formally defined to ensure that no adversary can overcome the indistinguishability against chosen-keyword attacks or KGA. Furthermore, we propose a pairing-free semi-generic construction, combining a multiparty non-interactive protocol and authenticated functionality, which has proven to be secure under the standard model. The experimental results reveal that, compared with other state-of-the-art schemes, the proposed scheme is more practical, secure, and suitable for use with cloud-assisted IIoT systems.},
   author       = {Cheng{-}Yi Lee and
                   Zi{-}Yuan Liu and
                   Raylin Tso and
@@ -239,6 +265,7 @@ abbr= {IEEE Access},
 }
 
 @article{DBLP:journals/sj/LiuTTCM22,abbr= {IEEE Syst. J.},
+  abstract     = {In the era of cloud computing, massive quantities of data are encrypted and uploaded to the cloud to realize a variety of applications and services while protecting user confidentiality. Accordingly, the formulation of methods for efficiently searching encrypted data has become a critical problem. Public-key encryption with keyword search is an efficient solution that allows the data owner to generate encrypted keywords for a given document while also allowing the data user to generate the corresponding trapdoor for searching. Huang and Li proposed a public-key authenticated encryption with keyword search (PAEKS) scheme to resist keyword guessing attacks, where the data owner not only encrypts keywords but also authenticates them. However, existing PAEKS-related schemes carry a tradeoff between efficiency, storage cost, and security. In this article, we introduce a novel framework called identity-certifying authority-aided identity-based searchable encryption, which has the advantage of reducing storage space while remaining the efficiency and security. We formally define the system model and desired security requirements to represent attacks in a real scenario. In addition, we propose a provably secure scheme based on the gap bilinear Diffie–Hellman assumption and experimentally evaluate our scheme in terms of its performance and theoretical features against its state-of-the-art counterparts.},
   author       = {Zi{-}Yuan Liu and
                   Yi{-}Fan Tseng and
                   Raylin Tso and
@@ -280,6 +307,7 @@ abbr= {IEEE Access},
 }
 
 @inproceedings{DBLP:conf/asiajcis/TsengYWCTLH22,abbr={AsiaJCIS},
+  abstract     = {To achieve data sharing model in clouds under modern technology, several attribute-based encryption schemes have been proposed in many different ways. attribute-based encryption (ABE) is a one-to-many, fine-grained access control mechanism. Based on elliptic curve cryptography, we can reduce the computation overhead. However, most of these ABE schemes over elliptic curves are insecure or lacking of security proofs. In this manuscript, we review on the revocable multi-authority attribute-based encryption proposed by Ming et al.'s in 2021 and give the cryptanalysis on their scheme. More specifically, we demonstrate an attacking method to their scheme. Our attack allows any two users owning a same attribute colluding with each other, to generate private key of any chosen attribute set.},
   author       = {Yi{-}Fan Tseng and
                   Hao{-}Yu Yang and
                   Chieh{-}Han Wu and
@@ -299,6 +327,7 @@ abbr= {IEEE Access},
 }
 
 @inproceedings{DBLP:conf/icisc/LiuCTTM22, abbr={ICISC},
+  abstract     = {Public key encryption with keyword search (PEKS), which was introduced by Boneh et al. at EUROCRYPT’ 04, is a breakthrough approach to searching encrypted data under a public key setting. In this cryptographic primitive, senders can generate searchable ciphertexts for specific keywords to be retrieved from a given document; receivers can generate corresponding trapdoors for search by using their private keys. Recently, Jiang et al. (ACISP’ 16) proposed an improved PEKS scheme called public key encryption with authorized keyword search (PEAKS); this scheme enables authorized users to generate trapdoors for specific sets of keywords even if these users do not have access to the private key. Unfortunately, authorized users cannot delegate this power to other unauthorized users because the authorization in PEAKS is insufficiently flexible; therefore, this scheme is not suitable for enterprise scenarios in general. In this work, we introduce a novel cryptographic primitive called public key encryption with hierarchical authorized keyword search (PEHAKS) to solve this problem. In contrast to PEAKS, the proposed primitive enables authorized users to further hierarchically delegate their power of generating trapdoors to unauthorized users. We formally define the system model of PEHAKS under a multikeyword setting, and the security requirements are designed to withstand attacks in a real scenario. Furthermore, we propose a provably secure scheme using the technique of dual pairing vector spaces and demonstrate that the scheme is secure under the hardness of the n-extended decisional Diffie–Hellman assumption. Therefore, the proposed scheme is secure and can be applied in scenarios that require hierarchical authorization. To the best of the authors’ knowledge, no PEKS variant schemes with this property have been previously designed.},
   author       = {Zi{-}Yuan Liu and
                   Chu{-}Chieh Chien and
                   Yi{-}Fan Tseng and
@@ -322,6 +351,7 @@ abbr= {IEEE Access},
 }
 
 @inproceedings{DBLP:conf/ispec/LeeLTT22, abbr={ISPEC},
+  abstract     = {With the rapid development of blockchain applications, digital identity management systems have started being deployed on decentralized networks. However, the inherent transparency of blockchain technology poses a challenge to privacy-conscious applications. To address this challenge, we adopt a DDH-based oblivious transfer and trust execution environment (TEE) to hide users’ private attributes. Furthermore, we propose a concrete system that includes transferring users’ attributes from a legacy server for verifying and issuing on the blockchain. In verifying protocol, we apply TEE in confidential smart contracts that execute the verification logic privately. Users can control their data and freely compose their identities using verified attributes. We also leverage smart contracts to record the status of attributes to achieve batch revocation of identities. Security analysis and comparison demonstrate that our system achieves privacy protection and is more user-centric in revocation than existing blockchain-based identity systems.},
   author       = {Yi{-}Hsiu Lee and
                   Zi{-}Yuan Liu and
                   Raylin Tso and
@@ -344,6 +374,7 @@ abbr= {IEEE Access},
 }
 
 @inproceedings{DBLP:conf/ispec/LiaoTLT22, abbr={ISPEC},
+  abstract     = {Blockchain-based payment systems (e.g., Bitcoin) have been wildly adopted for many scenarios since the transaction details are publicly accessible. Blockchain-based anonymous payment systems (e.g., Monero and Zerocash) have also been proposed to protect on-chain privacy, such as the sender’s or receiver’s balance, and the transaction amount. However, overly privacy preserving systems are sometimes abused for malicious behavior in lieu of suitable regulation. Thus, balancing between requirements for regulation and privacy has become an important issue for such systems. This paper proposes a blockchain-based confidential payment system with controllable regulation. To protect user privacy and provide controllable regulations, we realized the proposed system using threshold homomorphic encryption to encrypt user transaction values and balance. The encryption was performed with thresholded regulators’ keys and hence limits regulator abilities to decrypt a transaction. In addition, we can update the user’s balance using the homomorphic property, without decrypting the transaction value or user’s balance, preserving on-chain privacy, while satisfying all security requirements. A prototype implementation is provided for performance analysis.},
   author       = {Yu{-}Chen Liao and
                   Raylin Tso and
                   Zi{-}Yuan Liu and
@@ -365,6 +396,7 @@ abbr= {IEEE Access},
 }
 
 @inproceedings{DBLP:conf/iwsec/YouLTTM22, abbr={IWSEC},
+  abstract     = {As business activities and information exchange increasingly move online, digital signatures, among other cryptographic techniques, have been developed to help authenticate the source and integrity of digital information when transferred. Various types of signature primitives, such as ring signatures and blind signatures, have been introduced to satisfy privacy protection needs spanning from ensuring anonymity of a signer to maintaining secrecy of the content to be signed from a signer. Among different signature schemes, the 1-out-of-N oblivious signature scheme, which was introduced by Chen (ESORICS’ 94) and later formalized by Tso et al. (ISPEC’ 08), provides a further basis of trust while preserving the signature requestor’s privacy as blind signatures do. In this scheme, a recipient first selects a set of messages, one of which being the message he or she intends to obtain a signature for. After interacting with a signer, while the recipient will be able to obtain a signature on the predetermined message, the signer only knows that he or she signed one of the messages but remains oblivious to exactly which message was signed. However, all existing oblivious signature schemes are built upon the hardness of number-theoretic problems, which, as Shor demonstrated in 1994, cannot withstand attacks from quantum adversaries. To address this problem, this work proposes a novel quantum-resistant 1-out-of-N oblivious signature scheme based on SIS hard assumption. We also provide security proofs to demonstrate that the security requirements of ambiguity and strong unforgeability are satisfied under the random oracle model. To the best of our knowledge, the proposed scheme is the first 1-out-of-N oblivious signature that is secure against quantum adversaries.},
   author       = {Jing{-}Shiuan You and
                   Zi{-}Yuan Liu and
                   Raylin Tso and
@@ -387,6 +419,7 @@ abbr= {IEEE Access},
 }
 
 @article{DBLP:journals/istr/LiuTTM21, abbr={JISA},
+  abstract     = {Public-key encryption with keyword search (PEKS), proposed by Boneh et al. (2004), allows users to search encrypted keywords without losing data privacy. Although extensive studies have been conducted on this topic, only a few have focused on insider-keyword-guessing attacks (IKGA) that can reveal a user’s sensitive information. In particular, after receiving a trapdoor used to search ciphertext from a user, a malicious insider (e.g., a server) can randomly encrypt possible keywords using the user’s public key, and then test whether the trapdoor corresponds to the selected keyword. This paper introduces a new concept called designated-ciphertext searchable encryption (DCSE), which provides the same desired functionality as a PEKS scheme and prevents IKGA. Each trapdoor in DCSE is designated to a specific ciphertext, and thus malicious insiders cannot perform IKGA. We further propose a generic DCSE construction that employs identity-based encryption and a key encapsulation mechanism. We provide formal proofs to demonstrate that the generic construction satisfies the security requirements. Moreover, we provide a lattice-based instantiation whose security is based on NTRU and ring-learning with errors assumptions; the proposed scheme is thus considered to be resistant to the quantum-computing attacks.},
   author       = {Zi{-}Yuan Liu and
                   Yi{-}Fan Tseng and
                   Raylin Tso and
@@ -401,6 +434,7 @@ abbr= {IEEE Access},
 }
 
 @article{DBLP:journals/scn/TsengLHT21, abbr={SCN},
+  abstract     = {Predicate encryption (PE), formalized by Katz et al., is a new paradigm of public-key encryption that conceptually captures the public-key encryption that supports fine-grained access control policy. Because of the nature of PE, it is used for cloud storage so that users can retrieve encrypted data without revealing any information about the data to cloud servers and other users. Although lots of PE schemes have been studied, the predicate-hiding security is seldom considered; that is, the user’s secret key may leak sensitive information of the predicate. Additionally, the security of the current predicate-hiding PE schemes relies on the discrete logarithm assumption which cannot resist the quantum attacks in the future. In this paper, we propose a generic PE for inner product under symmetric-key setting, called private IPE, from specific key-homomorphic pseudorandom function (PRF). The rigorous proofs are provided to show that the construction is payload-hiding, attribute-hiding, and predicate-hiding secure. With the advantage of the generic construction, if the underlying PRF can resist quantum attacks, then, through our proposed generic construction, a quantum-resistant private IPE can be obtained.},
   author       = {Yi{-}Fan Tseng and
                   Zi{-}Yuan Liu and
                   Jen{-}Chieh Hsu and
@@ -416,6 +450,7 @@ abbr= {IEEE Access},
 }
 
 @inproceedings{DBLP:conf/asiajcis/YangTLHT21, abbr={AsiaJCIS},
+  abstract     = {A proxy re-encryption with keyword search (PRES) provides simultaneously the function of keyword search and flexible sharing of data. The concept is more efficient than the traditional data-sharing method by performing "search-download-decrypt-encrypt." However, a PRES is limited to searching for encrypted keywords using the same public key. To address this problem, Li et al. introduced a new primitive, called proxy re-encryption with equality test (PREET), which can search for ciphertext under different public keys. PREET effectively solves these problems and provides an equality test of keywords under different public keys. Unfortunately, we found that their scheme was unable to effectively verify the integrity of the ciphertext during the verification process of the decryption step. Therefore, we propose an improved scheme to make the verification effectively verify the integrity of the ciphertext. In addition, a security proof is provided to show that our proposed scheme is secure against chosen-ciphertext attacks based on the Diffie–Hellman assumptions under random oracle models.},
   author       = {Chih{-}Chen Yang and
                   Raylin Tso and
                   Zi{-}Yuan Liu and
@@ -433,6 +468,7 @@ abbr= {IEEE Access},
 }
 
 @inproceedings{DBLP:conf/desec/HuangLT21, abbr={DSC},
+  abstract     = {Blind signatures allow a user to obtain a signature without revealing message information to the signer. However, in many cases, the signer must record additional information relevant to the signature. Therefore, the concept of partially blind signature is introduced that enables the signer to obtain some information from the signed message. With the development of blockchain technology, users increasingly use Bitcoin for purchases and transactions with coin providers. Some studies have indicated that Elliptic Curve Digital Signature Algorithm (ECDSA)-based blind signatures are compatible with Bitcoin because they prevent the linking of sensitive information due to the untamability of Bitcoin. However, these approaches are not sufficiently flexible because blind signatures do not allow the signer to obtain any information. Here, we propose an ECDSA-based partially blind signature scheme. Security proofs are provided to demonstrate that the proposed scheme have satisfactory unforgeability and blindness. To the best of our knowledge, compared with other state-of-the-art schemes, our scheme is the first ECDSA-based partially blind signature scheme compatible with the current Bitcoin protocol.},
   author       = {Hongxun Huang and
                   Zi{-}Yuan Liu and
                   Raylin Tso},
@@ -447,6 +483,7 @@ abbr= {IEEE Access},
 }
 
 @inproceedings{DBLP:conf/ispacs/LiuTT21, abbr={ISPACS},
+  abstract     = {In this note, we conduct a cryptanalysis of the paper published by Zhu et al. on Future Generation Computer Systems in 2021. We demonstrate that their quantum-resistant identity-based proxy signcryption scheme cannot satisfy the confidentiality as they claimed.},
   author       = {Zi{-}Yuan Liu and
                   Yi{-}Fan Tseng and
                   Raylin Tso},
@@ -463,6 +500,7 @@ abbr= {IEEE Access},
 
 
 @article{DBLP:journals/jifs/HsiaoLTKC20, abbr={JIFS},
+  abstract     = {Gated Recurrent Unit (GRU) has wide application fields, such as sentiment analysis, speech recognition, and other sequential data processing. For efficient prediction, a growing number of model owners choose to deploy the trained GRU models through the machine-learning-as-a-service method (MLaaS). However, deploying a GRU model in cloud generates privacy issues for both model owners and prediction clients. This paper presents the architecture of PrivGRU and designs the privacy-preserving protocols to complete the secure inference. The protocols include base protocols and principal protocols. Base protocols define basic linear and non-linear computations, while principal protocols construct the gating mechanisms of GRUs. The main benefit of PrivGRU is to address privacy problems while enjoying the efficiency and convenience of MLaaS. The overall secure inference is performed on shares, which retain two properties of security: correctness and privacy. To prove the security, this work adopts Universal Composability (UC) framework with the honest-but-curious corruption model. As each protocol is proved to UC-realize the ideal functionality, it can be arbitrarily composed in any manner. This strong security feature makes PrivGRU more flexible and practical in future implementation.},
   author       = {Shou{-}Ching Hsiao and
                   Zi{-}Yuan Liu and
                   Raylin Tso and
@@ -480,6 +518,7 @@ abbr= {IEEE Access},
 }
 
 @inproceedings{DBLP:conf/asiaccsscc/LiuWHT20, abbr={SBC@AsiaCCS},
+  abstract     = {Since machine learning and deep learning are largely used for image recognition in real-world applications, how to avoid adversarial attacks become an important issue. It is common that attackers add adversarial perturbation to a normal image in order to fool the models. The N-pixel attack is one of the recently popular adversarial methods by simply changing a few pixels in the image. We observe that changing the few pixels leads to an obvious difference with its neighboring pixels. Therefore, this research aims to defend the N-pixel attacks based on image reconstruction. We develop a three-staged reconstructing algorithm to recover the fooling images. Experimental results show that the accuracy of CIFAR-10 test dataset can reach 92\% after applying our proposed algorithm, indicating that the algorithm can maintain the original inference accuracy on normal dataset. Besides, the effectiveness of defending N-pixel attacks is also validated by reconstructing 500 attacked images using the proposed algorithm. The results show that we have a 90\% to 92\% chance of successful defense, where N=1,3,5,10,and 15.},
   author       = {Zi{-}Yuan Liu and
                   Peter Shaojui Wang and
                   Shou{-}Ching Hsiao and
@@ -496,6 +535,7 @@ abbr= {IEEE Access},
 }
 
 @inproceedings{DBLP:conf/asiajcis/TsengLT20, abbr={AsiaJCIS},
+  abstract     = {Proxy re-encryption (PRE), formalized by Blaze et al. in 1998, allows a proxy entity to delegate the decryption right of a ciphertext from one party to another without obtaining the information of the plaintext. In recent years, many studies have explored how to construct PRE schemes that support fine-grained access control for complex application scenarios, such as identity-based PRE and attribute-based PRE. Besides, in order to achieve more flexible access control, the predicate proxy re-encryption (PPRE) is further studied. However, existing PPRE is restricted with the inner product predicate function. Therefore, how to realize the PPRE of arbitrary predicate function is still a problem to be solved. In this manuscript, we propose a secure generic construction of predicate proxy key re-encapsulation mechanism built from a “linear” predicate key encapsulation mechanism. Since the secure key encapsulation mechanism can be used as a building block to construct public key encryption, we can obtain a PPRE from our construction. As a result, the results open up new avenues for building more flexible and fine-grained PPRE.},
   author       = {Yi{-}Fan Tseng and
                   Zi{-}Yuan Liu and
                   Raylin Tso},
@@ -510,6 +550,7 @@ abbr= {IEEE Access},
 }
 
 @inproceedings{DBLP:conf/asiajcis/HsuLTC20, abbr={AsiaJCIS},
+  abstract     = {Private information retrieval (PIR) is a privacy protection that allows users to retrieve information from a database without revealing any information about the retrieved data to the server. Since the pioneering work of Chor et al. (FOCS `95) and of Kushilevitz and Ostrovsky (FOCS `97), PIR has been extensively studied (especially the single database setting) in the past two decades. However, most protocols only allow users to retrieve only one data at a time, which leads to high communication costs. To solve this issue, this work proposes a multi-value private information retrieval protocol using group homomorphic encryption, which allows users to retrieve multiple values at a time. We compared our work with that of Ostrovsky and Skeith (PKC `07) and show that retrieving multiple data at a time significantly can significantly reduces communication costs. Furthermore, we provide rigorous proof that if the underlying group homomorphic encryption is secure, then no attacker can know what data the user has retrieved.},
   author       = {Hsiang{-}Chen Hsu and
                   Zi{-}Yuan Liu and
                   Raylin Tso and
@@ -525,6 +566,7 @@ abbr= {IEEE Access},
 }
 
 @inproceedings{DBLP:conf/icete/TsengLT20, abbr={SECRYPT},
+  abstract     = {Inner product encryption is a powerful cryptographic primitive, where a private key and a ciphertext are both associated with a predicate vector and an attribute vector, respectively. A successful decryption requires the inner product of the predicate vector and the attribute vector to be zero. Most of the existing inner product encryption schemes suffer either long private key or heavy decryption cost. In this manuscript, an efficient inner product encryption is proposed. The length for a private key is only an element in G and an element in Zp. Besides, only one pairing computation is needed for decryption. Moreover, both formal security proof and implementation result are demonstrated in this manuscript. To the best of our knowledge, our scheme is the most efficient one in terms of the private key length and the number of pairings computation for decryption.},
   author       = {Yi{-}Fan Tseng and
                   Zi{-}Yuan Liu and
                   Raylin Tso},
@@ -545,6 +587,7 @@ abbr= {IEEE Access},
 
 
 @article{DBLP:journals/iacr/HsiaoLT20, abbr={ePrint},
+  abstract     = {Gated Recurrent Unit (GRU) has broad application fields, such as sentiment analysis, speech recognition, malware analysis, and other sequential data processing. For low-cost deployment and efficient machine learning services, a growing number of model owners choose to deploy the trained GRU models through Machine-learning-as-a-service (MLaaS). However, privacy has become a significant concern for both model owners and prediction clients, including model weights privacy, input data privacy, and output results privacy. The privacy leakage may be caused by either external intrusion or insider attacks. To address the above issues, this research designs a framework for privacy-preserving GRU models, which aims for privacy scenarios such as predicting on textual data, network packets, heart rate data, and so on. In consideration of accuracy and efficiency, this research uses additive secret sharing to design the basic operations and gating mechanisms of GRU. The protocols can meet the security requirements of privacy and correctness under the Universal Composability framework with the semi-honest adversary. Additionally, the framework and protocols are realized with a proof-of-concept implementation. The experiment results are presented with respect to time consumption and inference accuracy.},
   author       = {Shou{-}Ching Hsiao and
                   Zi{-}Yuan Liu and
                   Raylin Tso},
@@ -556,6 +599,7 @@ abbr= {IEEE Access},
 }
 
 @article{DBLP:journals/access/TsoLT19, abbr={IEEE Access},
+  abstract     = {Blind multisignature (BMS), first introduced by Horster et al, constitutes a crucial primitive that allows a user to generate a signature of a message from multiple signers, while the signers cannot obtain any information about the message. With these useful properties, blind multisignature is suitable for electronic payments and electronic voting. However, most of the current BMS schemes may be attacked by quantum computers in the future because they are based on traditional number theories, such as discrete logarithm assumption and large integer factor assumption. In this work, we first formalize the notion and the sound security models of the identity-based blind multisignature scheme (IDBMS). Then we present an instantiation based on lattices, along with rigorous proofs of the blindness and unforgeability under the lattice hard assumption (short integer solution, SIS), which is considered to remain secure under quantum computer attacks. To the best of our knowledge, it is the first identity-based quantum-resistant scheme that has the advantages of blind signature and multisignature.},
   author       = {Raylin Tso and
                   Zi{-}Yuan Liu and
                   Yi{-}Fan Tseng},
@@ -569,6 +613,7 @@ abbr= {IEEE Access},
 }
 
 @inproceedings{DBLP:conf/asiajcis/LiuTTM19, abbr={AsiaJCIS},
+  abstract     = {A signcryption scheme provides both the function of digital signature and encryption scheme at the same time. Additionally, it has lower cost than traditional sign-then-encrypt or encrypt-then-sign approaches. Many useful applications have been found where confidentiality and non-repudiation are both required. On the other hand, with the current development of rapid quantum computing, currently schemes based on traditional numerical assumptions (e.g., decisional Diffie-Hellman assumption) are more likely to be attacked by quantum computers. Therefore, lattice-based signcryption schemes have been extensively studied in recent years. However, most of them are either inefficient or secure-proved under the assumptions of random oracles. Although some of them are proved in the standard model, they are not practical in low-cost devices. Since the security is based on "Learning with Errors" (LWE) or "Short Integer Solution" problems, it will result in extremely large size of keys. In this paper, we propose an efficient NTRU-based signcryption scheme, which is inspired from Pion et al.'s key encapsulation mechanism. We provide rigorous security proofs for the confidentiality and unforgeability under NTRU-based assumptions in the standard model. Compared with other schemes, we conclude that our scheme is more efficient and secure.},
   author       = {Zi{-}Yuan Liu and
                   Raylin Tso and
                   Yi{-}Fan Tseng and
@@ -584,6 +629,7 @@ abbr= {IEEE Access},
 }
 
 @inproceedings{DBLP:conf/dappcon/TsaiTLC19, abbr={DAPPCON},
+  abstract     = {Blockchain is the core technology underlying the first decentralized cryptocurrency, Bitcoin, introduced by Nakamoto in 2008. Since then, blockchain technology has many more advancements that are being developed and experimented. In particular, recent blockchain platforms such as Ethereum offer general and executable scripts, namely smart contracts, that can be employed to develop decentralized applications (DApps) in many domains beyond payment. However, the transparency of blockchain data raises concerns for many applications that require high privacy level. Therefore, many privacy enhancing technologies have been applied to DApp development, including zero knowledge proof (ZKP). This paper focuses on a particular kind of ZKP, called zero knowledge range proof (ZKRP), that has been applied in blockchain-based payments for banks. ZKRP allows a user to convince other people that a secret value actually lies within an interval without revealing any information about the secret. Here we introduce a new ZKRP which has the following remarkable features: (1) Non-interactive: No communication is required between a user and a verifier during the proof. (2) Range-flexibility: There is no limitation on the lower bound and the upper bound of the range except that they are natural numbers. (3) Efficiency: Our scheme is modified from that of Pang et al. (2010), yet achieves better security and is more efficient than their scheme. We believe our new ZKRP can be beneficial to the development of DApps and can extend the application scope to more scenarios.},
   author       = {Ya Che Tsai and
                   Raylin Tso and
                   Zi{-}Yuan Liu and
@@ -600,6 +646,7 @@ abbr= {IEEE Access},
 }
 
 @inproceedings{DBLP:conf/kes/HsiaoKLT19, abbr={KES},
+  abstract     = {Machine learning has largely applied to malware detection and classification, due to the ineffectiveness of signature-based method toward rapid malware proliferation. Although state-of-the-art machine learning models tend to achieve high performances, they require a large number of training samples. It is infeasible to train machine learning models with sufficient malware samples while facing newly appeared malware variants. Therefore, it is important for security protectors to train a model given a small set of data, which can identify malware variants based on the similarity function. In addition, security protectors should keep re-training the models on newly-found samples, while the typical machine learning models based on massive data are not efficient for the instant update. Inspired by recent success using Siamese neural networks for one-shot image recognition, we aim to apply the networks to malware image classification task. The implementation includes three main stages: pre-processing, training, and testing. In the pre-processing stage, the system transforms malware samples to the resized gray-scale images and classifies them by average hash in the same family. In the training and testing stages, Siamese networks are trained to rank similarity between samples and the accuracy is calculated through N-way one-shot tasks. The experiment results showed that our networks outperformed the baseline methods. Besides, this paper indicated that our networks were more suitable for malware image one-shot learning than typical deep learning models.},
   author       = {Shou{-}Ching Hsiao and
                   Da{-}Yu Kao and
                   Zi{-}Yuan Liu and
@@ -626,6 +673,7 @@ abbr= {IEEE Access},
 
 
 @inproceedings{DBLP:conf/ntms/LiuHTW18,  abbr={NTMS},
+  abstract     = {Policy-controlled signature (PCS) was introduced by Pairat Thorncharoensri et al. at ICICS 2009, and improved at Computer Standards \& Interfaces 2017. In this type of digital signature, signer can sign a message with some policies. Any verifier who does not satisfies the policies cannot verify the message. They also extended the notion of policy-controlled signature, and called it "universal policy-controlled signature". In their extended notion, they improve the flexibility of the PCS scheme by allowing a third party to equip the signature with policy, rather than the signer. In this work, we use the recent techniques in lattice to construct policy- controlled based signature from NTRU lattice. In particular, we adapt Léo Ducas et al.'s encryption and signature protocol on lattice (ASIACRYPT 2014), and combine them with Pairat Thorncharoensri et al.'s work to satisfy the properties of policy-controlled signature. Our contribution is developing the first quantum- resistant schema based on the policy-controlled signature.},
   author       = {Zi{-}Yuan Liu and
                   Jen{-}Chieh Hsu and
                   Raylin Tso and
