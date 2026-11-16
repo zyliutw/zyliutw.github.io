@@ -55,6 +55,11 @@ jobs:
         run: |
           npm install -g purgecss
           purgecss -c purgecss.config.js
+
+      - name: Inline CSS 🎨
+        # embed the (now small) stylesheets in each page so the first paint does not wait for them
+        run: ruby bin/inline_css.rb _site
+
       - name: Deploy 🚀
         if: github.event_name != 'pull_request'
         uses: JamesIves/github-pages-deploy-action@v4
