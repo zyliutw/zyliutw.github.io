@@ -384,9 +384,11 @@ ul.task-list input[type="checkbox"] {
 
 .social {
   text-align: center;
+  margin-top: 1.5rem;
 
   .contact-icons {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    line-height: 1;
 
     a {
       i::before {
@@ -461,9 +463,10 @@ footer.fixed-bottom {
 
 footer.sticky-bottom {
   border-top: 1px solid var(--global-divider-color);
-  padding-top: 40px;
-  padding-bottom: 40px;
-  font-size: 0.9rem;
+  margin-top: 2rem !important;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 0.8rem;
 
   .container {
     text-align: center;
