@@ -1122,3 +1122,38 @@ swiper-container {
   --swiper-pagination-color: var(--global-theme-color);
   --swiper-pagination-bullet-inactive-color: var(--global-text-color);
 }
+
+// Inline SVG icons (replace the Academicons icon font for the most common profiles)
+.icon-svg {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.125em;
+  fill: currentColor;
+}
+
+.social .contact-icons a {
+  .icon-svg {
+    color: var(--global-text-color);
+  }
+
+  &:hover .icon-svg {
+    color: var(--global-theme-color);
+  }
+}
+
+// Sub-section headings inside page content (e.g. the research page)
+.post article h5 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+// Justified text leaves large gaps between words on narrow screens
+@media (max-width: 576px) {
+  .clearfix p,
+  .post article p,
+  .publications ol.bibliography li .hidden {
+    text-align: left;
+  }
+}

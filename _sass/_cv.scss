@@ -213,3 +213,23 @@ ul.timeline li::before {
      color: var(--global-text-color);
 }
 */
+
+// Inline SVG icon used in place of the Font Awesome institution glyph
+span.iconinstitution {
+  color: var(--global-theme-color);
+  font-size: 0.95rem;
+  margin-right: 0.3rem;
+}
+
+// Keep the date badge column wide enough for its 110px badge on tablets
+@media (min-width: 768px) {
+  .cv .cv-date-col {
+    flex: 0 0 130px;
+    max-width: 130px;
+  }
+
+  .cv .cv-body-col {
+    flex: 1 1 0;
+    max-width: calc(100% - 130px);
+  }
+}

@@ -150,7 +150,7 @@
     {% endif %}
     {% assign entrytype_text = entrytype | strip_html | strip %}
     {% capture periodical %}
-      {{ entrytype }}{% if entry.volume %}, {{ entryvolume }}{% endif %}{% if entry.pages != ""%}, {{ entrypages }}{% endif %}{% if entrytype_text != "" and entryyear != "" %}, 
+      {{ entrytype }}{% if entry.volume %}, {{ entryvolume }}{% endif %}{% if entry.pages and entry.pages != "" %}, {{ entrypages }}{% endif %}{% if entrytype_text != "" and entryyear != "" %}, 
       {{ entryyear }}
       {% endif %}
     {% endcapture %}
