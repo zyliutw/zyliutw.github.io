@@ -42,6 +42,20 @@
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url | bust_css_cache }}">
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 
+<!-- Speculation Rules: when a visitor hovers over (or starts to tap) an internal link, supporting
+     browsers (Chrome, Edge) prepare that page in the background so the click feels instant.
+     Other browsers ignore this block. -->
+<script type="speculationrules">
+  {
+    "prerender": [
+      {
+        "where": { "and": [{ "href_matches": "/*" }, { "not": { "href_matches": "/assets/*" } }] },
+        "eagerness": "moderate"
+      }
+    ]
+  }
+</script>
+
 <!-- Dark Mode -->
 {% if site.enable_darkmode %}
   <link
