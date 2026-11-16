@@ -233,3 +233,9 @@ span.iconinstitution {
     max-width: calc(100% - 130px);
   }
 }
+
+// The CV templates mark their text as "light" (300). With system fonts the body text is 400,
+// and Segoe UI Light is hard to read at this size, so keep the CV at the normal weight too.
+.cv .font-weight-light {
+  font-weight: 400 !important;
+}
