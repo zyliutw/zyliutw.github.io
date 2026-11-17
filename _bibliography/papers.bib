@@ -1,4 +1,40 @@
 
+@inproceedings{icics2026-blind-ribe-poster, abbr={ICICS},
+  abstract     = {Identity-based encryption (IBE) allows a sender to encrypt a message directly using the recipient’s identity, eliminating the need to manage public-key certificates. However, the key generation center (KGC) possesses the information required to derive every user’s private key and can therefore decrypt their ciphertexts, resulting in the well-known key escrow problem. Blind IBE with certified identities (Emura et al., Theor. Comput. Sci. ’22) mitigates this problem by introducing an independent identity-certifying authority and a blind key-issuing protocol that prevents the KGC from obtaining a user’s complete private key. However, their scheme does not support revocation. In practice, users may leave an organization, change roles, lose access privileges, or have their private keys compromised. To overcome this limitation, we propose Blind Revocable IBE with certified identities (Blind-RIBE with certified identities). Our construction integrates blind key issuance with binary-tree revocation. In addition, we define security models for three adversarial roles: an external adversary, an honest-but-curious KGC, and a potentially malicious ICA. To the best of our knowledge, Blind-RIBE with certified identities is the first scheme to integrate binary-tree revocation into the certified blind-IBE framework while simultaneously providing escrow resistance and recipient anonymity.},
+  author       = {Jia{-}Sin Yang and
+                  Cheng{-}Wei Liao and
+                  Zi{-}Yuan Liu},
+  title        = {{POSTER:} Blind Revocable Identity-Based Encryption with Certified Identities},
+  booktitle    = {Information and Communications Security - 28th International Conference,
+                  {ICICS} 2026, Fukui, Japan, October 27-30, 2026, Proceedings, Part
+                  {VI}},
+  series       = {Lecture Notes in Computer Science},
+  volume       = {17219},
+  pages        = {626--630},
+  publisher    = {Springer},
+  year         = {2026},
+  url          = {https://doi.org/10.1007/978-981-92-6843-6_44},
+  doi          = {10.1007/978-981-92-6843-6\_44},
+}
+
+@inproceedings{icics2026-tb-ibe-poster, abbr={ICICS},
+  abstract     = {Cloud computing is an important service for data owners to outsource their data to public cloud servers, while allowing data users to retrieve cloud-stored data. Identity-based encryption (IBE) is attractive in this setting, thereby eliminating the need for public-key certificate management. However, IBE relies on a single trusted key generation center, which can derive any user’s private key. This centralized design gives rise to the key escrow problem and creates a single point of failure. To address these risks, we introduce a primitive called threshold blind identity-based encryption with certified identities (TB-IBE). At a high level, the proposed protocol distributes the master secret key among n key generation centers (KGCs) through a dealer-free protocol. To obtain a private key, a user submits one independently blinded certificate per KGC to at least k of them, and reconstructs the private key from the received partial private keys. Consequently, no individual KGC possesses the complete master secret key or learns the identity associated with the partial private key it generates. To our knowledge, TB-IBE is the first IBE scheme to integrate threshold key generation, per-KGC identity blinding, and certified identity authorization. These properties make it suitable for applications such as cross-institutional electronic health record sharing, in which the key infrastructure is jointly operated by several organizations rather than controlled by a single party.},
+  author       = {Wei{-}Cheng Pan and
+                  Ting{-}Yu Wang and
+                  Zi{-}Yuan Liu},
+  title        = {{POSTER:} Threshold Blind Identity-Based Encryption with Certified Identities},
+  booktitle    = {Information and Communications Security - 28th International Conference,
+                  {ICICS} 2026, Fukui, Japan, October 27-30, 2026, Proceedings, Part
+                  {VI}},
+  series       = {Lecture Notes in Computer Science},
+  volume       = {17219},
+  pages        = {609--613},
+  publisher    = {Springer},
+  year         = {2026},
+  url          = {https://doi.org/10.1007/978-981-92-6843-6_41},
+  doi          = {10.1007/978-981-92-6843-6\_41},
+}
+
 @article{DBLP:journals/tcs26/2,abbr= {TCS},
   author       = {Zi{-}Yuan Liu},
   title        = {A note on "Wildcarded identity-based encryption from lattices"},
